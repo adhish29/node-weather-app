@@ -20,7 +20,7 @@ form.addEventListener('submit', e => {
   m_2.textContent = '';
 
   const l = loc.value;
-  const url = 'http://localhost:3000/weather?address=' + encodeURIComponent(l);
+  const url = '/weather?address=' + encodeURIComponent(l);
   // console.log(url);
   fetch(url)
   .then(res => res.json())
